@@ -1,0 +1,116 @@
+
+import { Button } from '@/components/ui/button';
+
+export const PricingPlans = () => {
+  const plans = [
+    {
+      name: "Starter",
+      price: "$299",
+      period: "/month",
+      description: "Perfect for small restaurants",
+      features: [
+        "Up to 10 3D menu items",
+        "Basic AR functionality", 
+        "Monthly updates",
+        "Email support",
+        "Mobile app integration"
+      ],
+      popular: false
+    },
+    {
+      name: "Pro",
+      price: "$599",
+      period: "/month", 
+      description: "Ideal for growing businesses",
+      features: [
+        "Up to 30 3D menu items",
+        "Advanced AR features",
+        "Weekly updates",
+        "Priority support",
+        "Analytics dashboard",
+        "Custom branding"
+      ],
+      popular: true
+    },
+    {
+      name: "Elite",
+      price: "$999",
+      period: "/month",
+      description: "For enterprise restaurants",
+      features: [
+        "Unlimited 3D menu items",
+        "Premium AR experiences",
+        "Real-time updates",
+        "24/7 dedicated support",
+        "Advanced analytics",
+        "White-label solution",
+        "API access"
+      ],
+      popular: false
+    }
+  ];
+
+  return (
+    <section className="py-20 px-4">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-yellow-400">
+            Pricing Plans
+          </h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            Choose the perfect plan for your restaurant. All plans include setup and training.
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-3 gap-8">
+          {plans.map((plan, index) => (
+            <div 
+              key={index}
+              className={`relative bg-gradient-to-br from-gray-900 to-black border rounded-2xl p-8 ${
+                plan.popular 
+                  ? 'border-yellow-400 shadow-lg shadow-yellow-400/20 scale-105' 
+                  : 'border-gray-700 hover:border-yellow-400/40'
+              } transition-all duration-300`}
+            >
+              {plan.popular && (
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-gradient-to-r from-yellow-400 to-amber-600 text-black px-4 py-2 rounded-full text-sm font-bold">
+                    Most Popular
+                  </span>
+                </div>
+              )}
+              
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold text-yellow-400 mb-2">{plan.name}</h3>
+                <p className="text-gray-400 mb-4">{plan.description}</p>
+                <div className="mb-6">
+                  <span className="text-5xl font-bold text-white">{plan.price}</span>
+                  <span className="text-gray-400">{plan.period}</span>
+                </div>
+              </div>
+              
+              <ul className="space-y-4 mb-8">
+                {plan.features.map((feature, featureIndex) => (
+                  <li key={featureIndex} className="flex items-center text-gray-300">
+                    <div className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></div>
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+              
+              <Button 
+                className={`w-full py-3 rounded-full font-bold transition-all duration-300 ${
+                  plan.popular
+                    ? 'bg-gradient-to-r from-yellow-400 to-amber-600 hover:from-yellow-500 hover:to-amber-700 text-black'
+                    : 'bg-transparent border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black'
+                }`}
+              >
+                Get Started
+              </Button>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
