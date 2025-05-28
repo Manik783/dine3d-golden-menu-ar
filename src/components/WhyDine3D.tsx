@@ -24,7 +24,7 @@ export const WhyDine3D = () => {
     <section className="py-20 px-4 relative">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-yellow-400">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gold-gradient bg-clip-text text-transparent">
             Why Dine3D?
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -39,10 +39,10 @@ export const WhyDine3D = () => {
               className="group bg-gradient-to-br from-gray-900 to-black border border-yellow-400/20 rounded-2xl p-8 hover:border-yellow-400/40 transition-all duration-300 hover:transform hover:scale-105"
             >
               <div className="mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-amber-600 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-gold-gradient rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                   <feature.icon className="w-8 h-8 text-black" />
                 </div>
-                <h3 className="text-2xl font-bold text-yellow-400 mb-4">
+                <h3 className="text-2xl font-bold bg-gold-gradient bg-clip-text text-transparent mb-4">
                   {feature.title}
                 </h3>
                 <p className="text-gray-300 leading-relaxed">

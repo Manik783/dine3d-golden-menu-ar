@@ -25,7 +25,7 @@ export const Testimonials = () => {
     <section className="py-20 px-4 bg-gradient-to-br from-black to-gray-900">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-yellow-400">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gold-gradient bg-clip-text text-transparent">
             What Our Clients Say
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -40,14 +40,14 @@ export const Testimonials = () => {
               className="bg-gradient-to-br from-gray-800 to-gray-900 border border-yellow-400/20 rounded-2xl p-8 hover:border-yellow-400/40 transition-all duration-300"
             >
               <div className="mb-6">
-                <div className="text-yellow-400 text-4xl mb-4">"</div>
+                <div className="bg-gold-gradient bg-clip-text text-transparent text-4xl mb-4">"</div>
                 <p className="text-gray-300 leading-relaxed italic">
                   {testimonial.quote}
                 </p>
               </div>
               
               <div className="border-t border-gray-700 pt-6">
-                <h4 className="text-yellow-400 font-bold text-lg">
+                <h4 className="bg-gold-gradient bg-clip-text text-transparent font-bold text-lg">
                   {testimonial.author}
                 </h4>
                 <p className="text-white font-medium">
