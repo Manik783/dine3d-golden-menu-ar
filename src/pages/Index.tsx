@@ -1,8 +1,7 @@
-
 import { Navbar } from '@/components/Navbar';
 import { HeroSection } from '@/components/HeroSection';
 import { WhyDine3D } from '@/components/WhyDine3D';
-import { HowItWorks } from '@/components/HowItWorks';
+import { WebARSection } from '@/components/WebARSection';
 import { VideoSection } from '@/components/VideoSection';
 import { PricingPlans } from '@/components/PricingPlans';
 import { Testimonials } from '@/components/Testimonials';
@@ -15,7 +14,7 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <WhyDine3D />
-      <HowItWorks />
+      <WebARSection />
       <VideoSection />
       <PricingPlans />
       <Testimonials />

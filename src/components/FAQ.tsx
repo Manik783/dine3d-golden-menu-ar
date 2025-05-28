@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
@@ -37,7 +36,7 @@ export const FAQ = () => {
   };
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-black to-gray-900">
+    <section className="py-20 px-4 bg-black">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gold-gradient bg-clip-text text-transparent">
@@ -52,7 +51,7 @@ export const FAQ = () => {
           {faqs.map((faq, index) => (
             <div 
               key={index}
-              className="bg-gradient-to-br from-gray-900 to-black border border-yellow-400/20 rounded-2xl overflow-hidden hover:border-yellow-400/40 transition-all duration-300"
+              className="bg-black border border-yellow-400/20 rounded-2xl overflow-hidden hover:border-yellow-400/40 transition-all duration-300"
             >
               <button
                 onClick={() => toggleFAQ(index)}

@@ -1,8 +1,7 @@
-
 export const VideoSection = () => {
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-gray-900 to-black">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-20 px-4 bg-black">
+      <div className="max-w-full mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gold-gradient bg-clip-text text-transparent">
             See Dine3D in Action
@@ -12,7 +11,7 @@ export const VideoSection = () => {
           </p>
         </div>
         
-        <div className="relative w-full h-[60vh] md:h-[70vh] lg:h-[80vh] rounded-2xl overflow-hidden shadow-2xl">
+        <div className="relative w-full h-screen rounded-none overflow-hidden">
           <video
             className="w-full h-full object-cover"
             autoPlay

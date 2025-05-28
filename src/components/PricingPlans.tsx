@@ -50,7 +50,7 @@ export const PricingPlans = () => {
   ];
 
   return (
-    <section id="pricing" className="py-20 px-4 bg-gradient-to-br from-black to-gray-900">
+    <section id="pricing" className="py-20 px-4 bg-black">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gold-gradient bg-clip-text text-transparent">
@@ -65,7 +65,7 @@ export const PricingPlans = () => {
           {plans.map((plan, index) => (
             <div 
               key={index}
-              className={`relative bg-gradient-to-br from-gray-900 to-black border rounded-2xl p-8 ${
+              className={`relative bg-black border rounded-2xl p-8 ${
                 plan.popular 
                   ? 'border-yellow-400 shadow-lg shadow-yellow-400/20 scale-105' 
                   : 'border-gray-700 hover:border-yellow-400/40'

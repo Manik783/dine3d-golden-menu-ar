@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Menu } from 'lucide-react';
 import { useState } from 'react';
@@ -12,9 +11,7 @@ export const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold bg-gold-gradient bg-clip-text text-transparent">
-              Dine3D
-            </h1>
+            <img src="/logo.png" alt="Dine3D Logo" className="h-8 outline-none border-none" />
           </div>
 
           {/* Desktop Menu */}
