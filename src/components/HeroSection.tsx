@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 
 export const HeroSection = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden pt-16">
+    <section id="home" className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden pt-16 bg-black">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-black via-black to-gray-900"></div>
       
@@ -47,7 +47,7 @@ export const HeroSection = () => {
           </a>
         </div>
         
-        {/* iPhone mockup with AR menu image */}
+        {/* iPhone mockup with app image and sliding animation */}
         <div className="mt-16 relative animate-fade-in delay-700">
           <div className="relative mx-auto w-80 h-[600px] md:w-96 md:h-[700px]">
             {/* iPhone frame */}
@@ -57,11 +57,11 @@ export const HeroSection = () => {
                 {/* iPhone notch */}
                 <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-6 bg-black rounded-b-2xl z-10"></div>
                 
-                {/* AR Menu image */}
+                {/* App image with sliding animation */}
                 <img 
-                  src="/lovable-uploads/5f781a17-8751-488f-825c-46bd422b7c3f.png" 
-                  alt="Dine3D AR Menu Interface"
-                  className="w-full h-full object-cover"
+                  src="/lovable-uploads/a901ffad-c526-4054-823d-0f6b239a0e16.png" 
+                  alt="Dine3D App Interface"
+                  className="w-full h-full object-cover animate-slide-down"
                 />
                 
                 {/* Overlay to show it's interactive */}

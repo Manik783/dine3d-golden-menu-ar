@@ -6,6 +6,7 @@ import { HowItWorks } from '@/components/HowItWorks';
 import { VideoSection } from '@/components/VideoSection';
 import { PricingPlans } from '@/components/PricingPlans';
 import { Testimonials } from '@/components/Testimonials';
+import { FAQ } from '@/components/FAQ';
 import { CTAFooter } from '@/components/CTAFooter';
 
 const Index = () => {
@@ -18,6 +19,7 @@ const Index = () => {
       <VideoSection />
       <PricingPlans />
       <Testimonials />
+      <FAQ />
       <CTAFooter />
     </div>
   );
