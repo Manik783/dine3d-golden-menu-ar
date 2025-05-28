@@ -1,4 +1,3 @@
-
 import { TrendingUp, Clock, Users } from 'lucide-react';
 
 export const WhyDine3D = () => {
@@ -21,7 +20,7 @@ export const WhyDine3D = () => {
   ];
 
   return (
-    <section className="py-20 px-4 relative">
+    <section id="features" className="py-20 px-4 relative">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gold-gradient bg-clip-text text-transparent">

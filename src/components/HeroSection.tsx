@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden pt-16">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-black via-black to-gray-900"></div>
       
@@ -26,14 +26,28 @@ export const HeroSection = () => {
           Engage diners with 3D & AR food menus that sell more and wow every time.
         </p>
         
-        {/* CTA Button */}
-        <Button 
-          className="bg-gold-gradient hover:opacity-90 text-black font-bold text-lg px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-yellow-500/25 animate-fade-in delay-500"
-        >
-          Book a Free Demo
-        </Button>
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-fade-in delay-500">
+          <Button 
+            className="bg-gold-gradient hover:opacity-90 text-black font-bold text-lg px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-yellow-500/25"
+          >
+            Book a Free Demo
+          </Button>
+          <a 
+            href="https://frontend-nine-sigma-24.vercel.app/menu/3" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <Button 
+              variant="outline" 
+              className="border-2 border-yellow-400 text-yellow-400 hover:bg-gold-gradient hover:text-black font-bold text-lg px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105"
+            >
+              Try Live Demo
+            </Button>
+          </a>
+        </div>
         
-        {/* iPhone mockup with your menu image */}
+        {/* iPhone mockup with AR menu image */}
         <div className="mt-16 relative animate-fade-in delay-700">
           <div className="relative mx-auto w-80 h-[600px] md:w-96 md:h-[700px]">
             {/* iPhone frame */}
@@ -43,9 +57,9 @@ export const HeroSection = () => {
                 {/* iPhone notch */}
                 <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-6 bg-black rounded-b-2xl z-10"></div>
                 
-                {/* Menu image */}
+                {/* AR Menu image */}
                 <img 
-                  src="/lovable-uploads/02c809ce-a66d-4826-a240-1fde02c0a983.png" 
+                  src="/lovable-uploads/5f781a17-8751-488f-825c-46bd422b7c3f.png" 
                   alt="Dine3D AR Menu Interface"
                   className="w-full h-full object-cover"
                 />

@@ -1,57 +1,56 @@
-
 import { Button } from '@/components/ui/button';
 
 export const PricingPlans = () => {
   const plans = [
     {
       name: "Starter",
-      price: "$299",
+      price: "$99",
       period: "/month",
-      description: "Perfect for small restaurants",
+      description: "Perfect for small restaurants getting started with AR menus",
       features: [
-        "Up to 10 3D menu items",
-        "Basic AR functionality", 
-        "Monthly updates",
+        "Up to 20 menu items in 3D",
+        "Basic AR functionality",
+        "Mobile app integration",
         "Email support",
-        "Mobile app integration"
-      ],
-      popular: false
+        "Monthly menu updates"
+      ]
     },
     {
       name: "Pro",
-      price: "$599",
-      period: "/month", 
-      description: "Ideal for growing businesses",
+      price: "$299",
+      period: "/month",
+      description: "Ideal for growing restaurants with extensive menus",
       features: [
-        "Up to 30 3D menu items",
+        "Up to 100 menu items in 3D",
         "Advanced AR features",
-        "Weekly updates",
-        "Priority support",
+        "Custom branding",
         "Analytics dashboard",
-        "Custom branding"
+        "Priority support",
+        "Weekly menu updates",
+        "Social media integration"
       ],
       popular: true
     },
     {
       name: "Elite",
-      price: "$999",
+      price: "$599",
       period: "/month",
-      description: "For enterprise restaurants",
+      description: "For restaurant chains and premium establishments",
       features: [
-        "Unlimited 3D menu items",
-        "Premium AR experiences",
-        "Real-time updates",
-        "24/7 dedicated support",
-        "Advanced analytics",
+        "Unlimited menu items",
         "White-label solution",
-        "API access"
-      ],
-      popular: false
+        "Advanced analytics",
+        "API access",
+        "24/7 dedicated support",
+        "Real-time menu updates",
+        "Custom AR experiences",
+        "Multi-location management"
+      ]
     }
   ];
 
   return (
-    <section className="py-20 px-4">
+    <section id="pricing" className="py-20 px-4 bg-gradient-to-br from-black to-gray-900">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gold-gradient bg-clip-text text-transparent">

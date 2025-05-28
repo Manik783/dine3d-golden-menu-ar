@@ -1,10 +1,9 @@
-
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 
 export const CTAFooter = () => {
   return (
-    <section className="py-20 px-4 bg-gradient-to-t from-gray-900 to-black">
+    <section id="contact" className="py-20 px-4 bg-gradient-to-t from-gray-900 to-black">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gold-gradient bg-clip-text text-transparent">
           Ready to Upgrade Your Menu?
