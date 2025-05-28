@@ -35,7 +35,7 @@ export const CTAFooter = () => {
           <div className="flex flex-col md:flex-row justify-between items-center text-gray-400">
             <div className="mb-4 md:mb-0">
               <img src="/logo.png" alt="Dine3D Logo" className="h-8 outline-none border-none" />
-              <p>© 2024 Dine3D. All rights reserved.</p>
+              <p>© 2025 Dine3D. All rights reserved.</p>
             </div>
             <div className="flex space-x-6">
               <a href="#" className="hover:bg-gold-gradient hover:bg-clip-text hover:text-transparent transition-colors">Privacy Policy</a>

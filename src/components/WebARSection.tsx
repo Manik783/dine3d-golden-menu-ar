@@ -1,6 +1,35 @@
+import { useRef, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 
 export const WebARSection = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            video.play();
+          } else {
+            video.pause();
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    observer.observe(video);
+
+    return () => {
+      if (video) {
+        observer.unobserve(video);
+      }
+    };
+  }, []);
+
   return (
     <section className="py-20 px-4 bg-black">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
@@ -35,8 +64,9 @@ export const WebARSection = () => {
         <div className="flex justify-center md:justify-end">
           <div className="relative w-full max-w-sm rounded-2xl overflow-hidden shadow-2xl">
              <video
+              ref={videoRef}
               className="w-full h-auto object-cover"
-              autoPlay
+              autoPlay={false}
               loop
               muted
               playsInline

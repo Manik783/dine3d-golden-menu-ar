@@ -1,6 +1,11 @@
 import { Button } from '@/components/ui/button';
 
 export const HeroSection = () => {
+
+  const scrollToBottom = () => {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+  };
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden pt-16 bg-black">
       {/* Background gradient */}
@@ -30,7 +35,9 @@ export const HeroSection = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-fade-in delay-500">
             <Button 
-              className="w-64 bg-gold-gradient text-black font-bold text-lg px-8 py-4 rounded-full transition-all duration-300 hover:opacity-90"
+              size="lg"
+              className="bg-gold-gradient text-black font-bold rounded-full transition-all duration-300 hover:opacity-90"
+              onClick={scrollToBottom}
             >
               Book a Free Demo
             </Button>
@@ -41,7 +48,8 @@ export const HeroSection = () => {
             >
               <Button 
                 variant="outline" 
-                className="w-64 bg-gold-gradient text-black font-bold text-lg px-8 py-4 rounded-full transition-all duration-300 hover:opacity-90"
+                size="lg"
+                className="bg-gold-gradient text-black font-bold rounded-full transition-all duration-300 hover:opacity-90"
               >
                 Try Live Demo
               </Button>
