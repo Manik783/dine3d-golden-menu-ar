@@ -1,4 +1,3 @@
-
 import { Eye, FileText, TrendingUp, Heart, Users, Target } from 'lucide-react';
 
 export const WhyDine3D = () => {
@@ -40,7 +39,7 @@ export const WhyDine3D = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gold-gradient bg-clip-text text-transparent">
-            Why 3D Menu ?
+            Why Dine3D?
           </h2>
         </div>
         
@@ -48,7 +47,7 @@ export const WhyDine3D = () => {
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="group bg-black border border-gray-800 rounded-2xl p-8 hover:border-yellow-400/40 transition-all duration-300 text-center"
+              className={`group bg-black border ${index === 1 || index === 3 || index === 5 ? 'border-yellow-400' : 'border-gray-800'} rounded-2xl p-8 hover:border-yellow-400/40 transition-all duration-300 text-center`}
             >
               <div className="mb-6">
                 <div className="w-16 h-16 bg-gold-gradient rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">

@@ -2,11 +2,11 @@ import { Navbar } from '@/components/Navbar';
 import { HeroSection } from '@/components/HeroSection';
 import { WhyDine3D } from '@/components/WhyDine3D';
 import { WebARSection } from '@/components/WebARSection';
-import { VideoSection } from '@/components/VideoSection';
 import { PricingPlans } from '@/components/PricingPlans';
-import { Testimonials } from '@/components/Testimonials';
 import { FAQ } from '@/components/FAQ';
 import { CTAFooter } from '@/components/CTAFooter';
+import { NewSectionPlaceholder } from '@/components/NewSectionPlaceholder';
+import { BenefitsSection } from '@/components/BenefitsSection';
 
 const Index = () => {
   return (
@@ -15,9 +15,13 @@ const Index = () => {
       <HeroSection />
       <WhyDine3D />
       <WebARSection />
-      <VideoSection />
+
+    
+      <BenefitsSection />
+      
+      
+      <NewSectionPlaceholder />
       <PricingPlans />
-      <Testimonials />
       <FAQ />
       <CTAFooter />
     </div>
