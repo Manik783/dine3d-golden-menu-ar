@@ -4,32 +4,6 @@ import { Button } from '@/components/ui/button';
 export const WebARSection = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            video.play();
-          } else {
-            video.pause();
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-
-    observer.observe(video);
-
-    return () => {
-      if (video) {
-        observer.unobserve(video);
-      }
-    };
-  }, []);
-
   return (
     <section className="py-20 px-4 bg-black">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
@@ -37,15 +11,17 @@ export const WebARSection = () => {
         <div className="text-center md:text-left">
           <div className="flex items-center justify-center md:justify-start mb-6">
             {/* Logo */}
-            <img src="/logo.png" alt="Dine3D Logo" className="h-8 mr-3 outline-none border-none" />
-            <h2 className="text-3xl md:text-4xl font-bold bg-gold-gradient bg-clip-text text-transparent">
-              WebAR for restaurant
+            
+            <h2 className="text-5xl md:text-5.5xl font-bold bg-gold-gradient bg-clip-text text-transparent">
+              HOW <img src="/logo.png" alt="Dine3D Logo" className="h-20 mr-2 inline-block align-middle mx-2 outline-none border-none" /> Works?
             </h2>
           </div>
           
-          <p className="text-xl text-gray-300 mb-8 max-w-md md:max-w-none mx-auto md:mx-0">
-            AR menu in the browser without installing additional applications. By QR-code or link.
-          </p>
+          <ul className="text-xl text-gray-300 mb-9 max-w-md md:max-w-none mx-auto md:mx-0 list-disc list-inside space-y-2">
+          <li>Access menus via QR codes or shareable links.</li><li>View stunning 3D & AR dish models directly in your browser — no app download needed.</li>
+            
+            <li>Interact by rotating, zooming, and viewing dishes in real size through smartphone cameras.</li>
+          </ul>
           
           <div className="flex flex-col sm:flex-row gap-6 items-center justify-center md:justify-start">
             {/* QR Code */}
@@ -66,7 +42,7 @@ export const WebARSection = () => {
              <video
               ref={videoRef}
               className="w-full h-auto object-cover"
-              autoPlay={false}
+              autoPlay={true}
               loop
               muted
               playsInline
