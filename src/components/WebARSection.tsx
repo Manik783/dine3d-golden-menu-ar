@@ -13,7 +13,7 @@ export const WebARSection = () => {
             {/* Logo */}
             
             <h2 className="text-5xl md:text-5.5xl font-bold bg-gold-gradient bg-clip-text text-transparent">
-              HOW <img src="/logo.png" alt="Dine3D Logo" className="h-20 mr-2 inline-block align-middle mx-2 outline-none border-none" /> Works?
+              HOW Dine3D Works?
             </h2>
           </div>
           
