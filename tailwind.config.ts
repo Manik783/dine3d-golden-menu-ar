@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -65,7 +64,7 @@ export default {
 				}
 			},
 			backgroundImage: {
-				'gold-gradient': 'linear-gradient(135deg, #d4c494 10%, #bfb180 25%, #a09460 50%, #8b7e45 75%, #766a3b 90%)',
+				'gold-gradient': 'linear-gradient(93.31deg, rgb(140, 97, 21) -22.19%, rgb(151, 109, 35) -17.01%, rgb(181, 142, 72) -6.02%, rgb(229, 195, 132) 8.85%, rgb(233, 199, 137) 10.15%, rgb(255, 234, 196) 25.67%, rgb(230, 185, 102) 68.35%, rgb(153, 111, 37) 107.15%)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
