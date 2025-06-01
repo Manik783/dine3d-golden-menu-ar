@@ -11,15 +11,14 @@ export const WebARSection = () => {
         <div className="text-center md:text-left">
           <div className="flex items-center justify-center md:justify-start mb-6">
             {/* Logo */}
-            
             <h2 className="text-5xl md:text-5.5xl font-bold bg-gold-gradient bg-clip-text text-transparent">
-              HOW <img src="/logo.png" alt="Dine3D Logo" className="h-20 mr-2 inline-block align-middle mx-2 outline-none border-none" /> Works?
+              HOW Dine3D Works?
             </h2>
           </div>
           
           <ul className="text-xl text-gray-300 mb-9 max-w-md md:max-w-none mx-auto md:mx-0 list-disc list-inside space-y-2">
-          <li>Access menus via QR codes or shareable links.</li><li>View stunning 3D & AR dish models directly in your browser — no app download needed.</li>
-            
+            <li>Access menus via QR codes or shareable links.</li>
+            <li>View stunning 3D & AR dish models directly in your browser — no app download needed.</li>
             <li>Interact by rotating, zooming, and viewing dishes in real size through smartphone cameras.</li>
           </ul>
           
@@ -39,7 +38,7 @@ export const WebARSection = () => {
         {/* Right side video */}
         <div className="flex justify-center md:justify-end">
           <div className="relative w-full max-w-sm rounded-2xl overflow-hidden shadow-2xl">
-             <video
+            <video
               ref={videoRef}
               className="w-full h-auto object-cover"
               autoPlay={true}
