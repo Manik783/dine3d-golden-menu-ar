@@ -5,7 +5,7 @@ export const WebARSection = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   return (
-    <section className="py-20 px-4 bg-black">
+    <section id="how-it-works" className="py-20 px-4 bg-black">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Left side content */}
         <div className="text-center md:text-left">

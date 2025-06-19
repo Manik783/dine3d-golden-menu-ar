@@ -7,7 +7,7 @@ export const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden pt-16 bg-black">
+    <section id="demo" className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden pt-16 bg-black">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-black via-black to-black"></div>
       
